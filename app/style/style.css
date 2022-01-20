@@ -50,9 +50,6 @@ a:visited {
 }
 
 /* brand section */
-.brand__logo {
-    max-width: 8.75rem;
-}
 
 
 /* intro */
@@ -136,7 +133,7 @@ a.btn:hover {
 @media screen and (min-width: 700px)  {
     body {
         background-image: url('/images/bg-desktop.svg');
-        background-position: left -40px top -30px ;
+        background-position: left top ;
     }
     .intro {
         margin-top: 6rem;
