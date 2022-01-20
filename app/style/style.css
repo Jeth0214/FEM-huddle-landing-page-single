@@ -9,8 +9,8 @@
     --clr-white: hsl(0, 0%, 100%);
 
     /* Font Family */
-    --ff-poppins: 'Open Sans', sans-serif;
-    --ff-open-sans: 'Poppins', sans-serif;
+    --ff-poppins: 'Poppins', sans-serif;
+    --ff-open-sans: 'Open Sans', sans-serif;
 }
 
 /* reset  */
@@ -26,6 +26,7 @@
 body {
     min-height: 100vh;
     font-family: var(--ff-open-sans);
+    font-weight: 400;
     color: var(--clr-white);
     background: var(--clr-violet) url('/images/bg-mobile.svg') no-repeat center top;
 }
@@ -67,11 +68,11 @@ a:visited {
     padding: 0.8rem 0.3rem;
 }
 
-.intro__title {
+h1 {
     font-size: clamp(1.5rem, 2vw + 1rem, 2.3rem);
     margin-bottom: 1.5rem;
-    font-weight: 600;
     font-family: var(--ff-poppins);
+    font-weight: 900;
 }
 
 .intro__title span {
@@ -136,7 +137,7 @@ a.btn:hover {
 @media screen and (min-width: 700px)  {
     body {
         background-image: url('/images/bg-desktop.svg');
-        background-position: left -40px top -30px ;
+        background-position: left -40px top -20px ;
     }
     .intro {
         margin-top: 6rem;
@@ -145,11 +146,11 @@ a.btn:hover {
     }
 
     .intro__image {
-        width: 55%;
+        max-width: 55%;
     }
 
     .intro__header{
-        width: 40%;
+        max-width: 40%;
     }
 
     .intro {
@@ -160,5 +161,14 @@ a.btn:hover {
     .social-medias {
         justify-content: end;
     }
+}
+
+@media screen and (max-width: 992px) and (min-width: 379px) {
+    .intro__header {
+        margin:  0;
+        text-align: left;
+        padding: 0;
+    }
+   
 }
 
