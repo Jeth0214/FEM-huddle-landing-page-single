@@ -46,7 +46,7 @@ a:visited {
 }
 
 .container {
-    width: min(85%, 1128px);
+    width: min(85%, 1100px);
     margin: 30px auto;
 }
 
@@ -137,7 +137,6 @@ a.btn:hover {
 @media screen and (min-width: 700px)  {
     body {
         background-image: url('/images/bg-desktop.svg');
-        background-position: left -40px center ;
     }
     .intro {
         margin-top: 6rem;
